@@ -3,14 +3,14 @@
         type: String,
         index: Number
     })
-    const emit = defineEmits(['toggleInput'])
+    const emit = defineEmits(['handleEvent'])
 
-    const toggleInput = () => {
-        emit('toggleInput')
+    const handleEvent = () => {
+        emit('handleEvent')
     }
 
 </script>
 
 <template>
-    <button @click="toggleInput">{{ props.type.toUpperCase() }}</button>
+    <button @click="handleEvent">{{ props.type.toUpperCase() }}</button>
 </template>

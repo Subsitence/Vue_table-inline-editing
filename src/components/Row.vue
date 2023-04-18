@@ -51,7 +51,7 @@
         <Button 
             :index="person.index"
             :type="'edit'"
-            @toggleInput="startEditing"
+            @handleEvent="startEditing"
             v-show="!isShowInput"
         />
         <Button 
@@ -62,12 +62,12 @@
         <Button 
             :type="'update'" 
             v-show="isShowInput"
-            @toggleInput="submitUpdate"
+            @handleEvent="submitUpdate"
         />
         <Button 
             :type="'cancel'" 
             v-show="isShowInput" 
-            @toggleInput="cancelEditing"
+            @handleEvent="cancelEditing"
         />
     </td>
 </template>

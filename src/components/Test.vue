@@ -13,15 +13,15 @@
             age: 18
         },
         {
-            name: 'duy thai',
+            name: 'hai anh',
             age: 21
         },
         {
-            name: 'van nam',
+            name: 'hai anh',
             age: 20
         },
         {
-            name: 'thai dui',
+            name: 'hai anh',
             age: 19
         }
     ])
@@ -60,7 +60,7 @@
     <p>This is something: {{ message }}</p>
     <input v-model="message" placeholder="type something"/>
     
-    <Child :title="'dm vdnh'" :number="14"/>
+    <Child :title="'test'" :number="14"/>
 </template>
 
 <style scoped>
